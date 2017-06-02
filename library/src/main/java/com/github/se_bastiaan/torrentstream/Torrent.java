@@ -480,12 +480,13 @@ public class Torrent implements AlertListener {
 
     private void sendStreamProgress() {
         TorrentStatus status = torrentHandle.status();
+        boolean finished = status.isFinished();
         float progress = status.progress() * 100;
         int seeds = status.numSeeds();
         int downloadSpeed = status.downloadPayloadRate();
 
         if (listener != null && prepareProgress >= 1) {
-            listener.onStreamProgress(this, new StreamStatus(progress, prepareProgress.intValue(), seeds, downloadSpeed));
+            listener.onStreamProgress(this, new StreamStatus(finished, progress, prepareProgress.intValue(), seeds, downloadSpeed));
         }
     }
 

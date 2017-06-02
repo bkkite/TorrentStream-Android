@@ -17,12 +17,14 @@
 package com.github.se_bastiaan.torrentstream;
 
 public class StreamStatus {
+    public final boolean finished;
     public final float progress;
     public final int bufferProgress;
     public final int seeds;
     public final float downloadSpeed;
 
-    protected StreamStatus(float progress, int bufferProgress, int seeds, int downloadSpeed) {
+    protected StreamStatus(boolean finished, float progress, int bufferProgress, int seeds, int downloadSpeed) {
+        this.finished = finished;
         this.progress = progress;
         this.bufferProgress = bufferProgress;
         this.seeds = seeds;
