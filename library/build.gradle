@@ -23,7 +23,7 @@ buildscript {
 
     dependencies {
         classpath 'com.android.tools.build:gradle:2.3.0'
-        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.0'
+        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.7.3'
         classpath 'com.github.dcendents:android-maven-gradle-plugin:1.5'
 
         // NOTE: Do not place your application dependencies here; they belong
@@ -59,6 +59,28 @@ android {
 
 ext {
     libtorrentVersion = '1.2.0.6'
+
+    bintrayRepo = 'maven'
+    bintrayName = 'TorrentStream-Android'
+
+    publishedGroupId = 'com.github.bkkite'
+    libraryName = 'TorrentStream-Android'
+    artifact = 'library'
+
+    libraryDescription = 'A torrent streamer library for Android based on jlibtorrent.'
+
+    siteUrl = 'https://github.com/bkkite/TorrentStream-Android'
+    gitUrl = 'https://github.com/bkkite/TorrentStream-Android.git'
+
+    libraryVersion = '1.0.0'
+
+    developerId = 'bkkite'
+    developerName = 'Vicente v'
+    developerEmail = 'vicente22@gmail.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
 }
 
 dependencies {
@@ -69,3 +91,6 @@ dependencies {
     compile "com.frostwire:jlibtorrent-android-x86:$libtorrentVersion"
     compile "com.frostwire:jlibtorrent-android-x86_64:$libtorrentVersion"
 }
+
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
