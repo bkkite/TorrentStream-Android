@@ -61,7 +61,7 @@ ext {
 
     publishedGroupId = 'com.github.bkkite'
     libraryName = 'TorrentStream-Android'
-    artifact = 'library'
+    artifact = 'torrentStream-android'
 
     libraryDescription = 'A torrent streamer library for Android based on jlibtorrent.'
 
