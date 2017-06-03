@@ -14,12 +14,21 @@
  * limitations under the License.
  */
 
-package com.github.se_bastiaan.torrentstream.exceptions;
+package com.github.bkkite.torrentstream.listeners;
 
-public class DirectoryModifyException extends Exception {
+import com.github.bkkite.torrentstream.StreamStatus;
+import com.github.bkkite.torrentstream.Torrent;
 
-    public DirectoryModifyException() {
-        super("Could not create or delete save directory");
-    }
+public interface TorrentListener {
+    void onStreamPrepared(Torrent torrent);
 
+    void onStreamStarted(Torrent torrent);
+
+    void onStreamError(Torrent torrent, Exception e);
+
+    void onStreamReady(Torrent torrent);
+
+    void onStreamProgress(Torrent torrent, StreamStatus status);
+
+    void onStreamStopped();
 }

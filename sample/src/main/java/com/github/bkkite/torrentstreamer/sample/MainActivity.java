@@ -17,7 +17,7 @@
  *
  */
 
-package com.github.se_bastiaan.torrentstreamer.sample;
+package com.github.bkkite.torrentstreamer.sample;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
@@ -33,11 +33,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ProgressBar;
 
-import com.github.se_bastiaan.torrentstream.StreamStatus;
-import com.github.se_bastiaan.torrentstream.Torrent;
-import com.github.se_bastiaan.torrentstream.TorrentOptions;
-import com.github.se_bastiaan.torrentstream.TorrentStream;
-import com.github.se_bastiaan.torrentstream.listeners.TorrentListener;
+import com.github.bkkite.torrentstream.StreamStatus;
+import com.github.bkkite.torrentstream.Torrent;
+import com.github.bkkite.torrentstream.TorrentOptions;
+import com.github.bkkite.torrentstream.TorrentStream;
+import com.github.bkkite.torrentstream.listeners.TorrentListener;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.github.se_bastiaan.torrentstream;
+package com.github.bkkite.torrentstream;
 
 import java.io.File;
 

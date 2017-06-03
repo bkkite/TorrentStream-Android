@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.github.se_bastiaan.torrentstream;
+package com.github.bkkite.torrentstream;
 
 import android.net.Uri;
 import android.os.Handler;
@@ -28,14 +28,14 @@ import com.frostwire.jlibtorrent.TorrentHandle;
 import com.frostwire.jlibtorrent.TorrentInfo;
 import com.frostwire.jlibtorrent.alerts.TorrentAddedAlert;
 import com.frostwire.jlibtorrent.swig.settings_pack;
-import com.github.se_bastiaan.torrentstream.exceptions.DirectoryModifyException;
-import com.github.se_bastiaan.torrentstream.exceptions.NotInitializedException;
-import com.github.se_bastiaan.torrentstream.exceptions.TorrentInfoException;
-import com.github.se_bastiaan.torrentstream.listeners.DHTStatsAlertListener;
-import com.github.se_bastiaan.torrentstream.listeners.TorrentAddedAlertListener;
-import com.github.se_bastiaan.torrentstream.listeners.TorrentListener;
-import com.github.se_bastiaan.torrentstream.utils.FileUtils;
-import com.github.se_bastiaan.torrentstream.utils.ThreadUtils;
+import com.github.bkkite.torrentstream.exceptions.DirectoryModifyException;
+import com.github.bkkite.torrentstream.exceptions.NotInitializedException;
+import com.github.bkkite.torrentstream.exceptions.TorrentInfoException;
+import com.github.bkkite.torrentstream.listeners.DHTStatsAlertListener;
+import com.github.bkkite.torrentstream.listeners.TorrentAddedAlertListener;
+import com.github.bkkite.torrentstream.listeners.TorrentListener;
+import com.github.bkkite.torrentstream.utils.FileUtils;
+import com.github.bkkite.torrentstream.utils.ThreadUtils;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;

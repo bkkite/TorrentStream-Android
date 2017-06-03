@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package com.github.se_bastiaan.torrentstream.exceptions;
+package com.github.bkkite.torrentstream.exceptions;
 
-public class NotInitializedException extends Exception {
+public class DirectoryModifyException extends Exception {
 
-    public NotInitializedException() {
-        super("TorrentStreamer is not initialized. Call init() first before getting an instance.");
+    public DirectoryModifyException() {
+        super("Could not create or delete save directory");
     }
 
 }

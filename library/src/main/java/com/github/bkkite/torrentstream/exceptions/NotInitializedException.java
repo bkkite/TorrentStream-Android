@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package com.github.se_bastiaan.torrentstream.exceptions;
+package com.github.bkkite.torrentstream.exceptions;
 
-public class TorrentInfoException extends Exception {
+public class NotInitializedException extends Exception {
 
-    public TorrentInfoException() {
-        super("No torrent info could be found or read");
+    public NotInitializedException() {
+        super("TorrentStreamer is not initialized. Call init() first before getting an instance.");
     }
 
 }

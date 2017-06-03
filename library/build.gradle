@@ -19,8 +19,6 @@ buildscript {
         jcenter()
     }
 
-
-
     dependencies {
         classpath 'com.android.tools.build:gradle:2.3.0'
         classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.7.3'
@@ -33,8 +31,6 @@ buildscript {
 
 apply plugin: 'com.android.library'
 apply plugin: 'com.github.dcendents.android-maven'
-
-group='com.github.se_bastiaan'
 
 android {
     compileSdkVersion 25

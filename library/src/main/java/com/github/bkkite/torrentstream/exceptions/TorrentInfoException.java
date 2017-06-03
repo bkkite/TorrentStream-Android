@@ -14,20 +14,12 @@
  * limitations under the License.
  */
 
-package com.github.se_bastiaan.torrentstream;
+package com.github.bkkite.torrentstream.exceptions;
 
-public class StreamStatus {
-    public final boolean finished;
-    public final float progress;
-    public final int bufferProgress;
-    public final int seeds;
-    public final float downloadSpeed;
+public class TorrentInfoException extends Exception {
 
-    protected StreamStatus(boolean finished, float progress, int bufferProgress, int seeds, int downloadSpeed) {
-        this.finished = finished;
-        this.progress = progress;
-        this.bufferProgress = bufferProgress;
-        this.seeds = seeds;
-        this.downloadSpeed = downloadSpeed;
+    public TorrentInfoException() {
+        super("No torrent info could be found or read");
     }
+
 }
